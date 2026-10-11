@@ -1,5 +1,5 @@
 includes:
-    - vendor/systonia/tenma-stubs/extension.neon
+    - vendor/tenma/stubs/extension.neon
 
 parameters:
     level: 10
