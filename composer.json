@@ -1,0 +1,44 @@
+{
+    "name": "systonia/tenma-psr",
+    "description": "Runs any PSR-15 app under Tenma: PSR-7 requests in, Tenma responses out, WebSockets and streams included.",
+    "type": "library",
+    "license": [
+        "MIT",
+        "Apache-2.0"
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../tenma-stubs",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "php": ">=8.5",
+        "psr/http-factory": "^1.1",
+        "psr/http-message": "^2.0",
+        "psr/http-server-handler": "^1.0"
+    },
+    "require-dev": {
+        "nyholm/psr7": "^1.8",
+        "phpstan/phpstan": "^2.2",
+        "phpunit/phpunit": "^13.3",
+        "systonia/tenma-stubs": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tenma\\Psr\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tenma\\Psr\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --testdox",
+        "stan": "phpstan analyse"
+    }
+}

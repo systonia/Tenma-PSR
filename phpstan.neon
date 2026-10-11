@@ -1,0 +1,7 @@
+includes:
+    - vendor/systonia/tenma-stubs/extension.neon
+
+parameters:
+    level: 10
+    paths:
+        - src
