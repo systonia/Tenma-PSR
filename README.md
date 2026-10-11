@@ -5,7 +5,7 @@ Requests arrive as PSR-7 `ServerRequestInterface`, built with the PSR-17 factory
 `ResponseInterface` goes back as Tenma's response.
 
 ```bash
-composer require systonia/tenma-psr nyholm/psr7
+composer require tenma/psr nyholm/psr7
 ```
 
 ```php

@@ -1,5 +1,5 @@
 {
-    "name": "systonia/tenma-psr",
+    "name": "tenma/psr",
     "description": "Runs any PSR-15 app under Tenma: PSR-7 requests in, Tenma responses out, WebSockets and streams included.",
     "type": "library",
     "license": [
